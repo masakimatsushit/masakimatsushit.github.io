@@ -1,11 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>My GitHub Pages Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Format LLC | Mobile App Development</title>
+  <meta name="description" content="Format LLC develops mobile applications for users around the world.">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #18202a;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e8ebef;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    nav a {
+      margin-left: 24px;
+      color: #18202a;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 110px 8%;
+      background: linear-gradient(135deg, #f4f7ff, #ffffff);
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      margin: 0 0 24px;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.1;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0;
+      color: #596270;
+      font-size: 20px;
+    }
+
+    section {
+      max-width: 1050px;
+      margin: auto;
+      padding: 80px 8%;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 34px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 28px;
+      border: 1px solid #e2e6ec;
+      border-radius: 18px;
+      background: #ffffff;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .company {
+      background: #f7f8fa;
+      border-radius: 20px;
+    }
+
+    a {
+      color: #2864dc;
+    }
+
+    footer {
+      padding: 32px 8%;
+      text-align: center;
+      color: #727b87;
+      border-top: 1px solid #e8ebef;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Support URL</h1>
-  <p>If you have any question you would like to ask us, please contact us at masaki030515@gmail.com</p>
+  <header>
+    <div class="logo">Format</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#support">Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Creating useful mobile experiences.</h1>
+      <p>
+        Format LLC develops intuitive mobile applications designed
+        to make creativity and everyday tasks easier.
+      </p>
+    </div>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Format LLC is a mobile application development company based in Tokyo,
+        Japan. We plan, develop, and operate applications for users around the world.
+      </p>
+    </section>
+
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Creative Apps</h3>
+          <p>
+            We develop tools that help users create drawings and explore
+            their creativity using mobile technology.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Utility Apps</h3>
+          <p>
+            We create simple and accessible mobile tools that improve
+            everyday digital experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="company">
+      <h2>Company Information</h2>
+      <p><strong>Legal name:</strong> 合同会社Format</p>
+      <p><strong>English name:</strong> Format LLC</p>
+      <p><strong>Location:</strong> Tokyo, Japan</p>
+      <p><strong>Business:</strong> Planning, development, and operation of mobile applications</p>
+    </section>
+
+    <section id="support">
+      <h2>Support</h2>
+      <p>
+        For questions about our applications, please contact us at
+        <a href="mailto:masaki030515@gmail.com">masaki030515@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Format LLC. All rights reserved.
+  </footer>
 </body>
 </html>
